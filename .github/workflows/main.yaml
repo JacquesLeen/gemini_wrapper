@@ -1,0 +1,24 @@
+name: Gemini wrapper
+description: A simple wrapper for the Gemini search engine.
+version: 1.0.0
+author: Giacomo Lini
+
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: |
+          make install
+      - name: Lint code
+        run: |
+          make lint
+      - name: Format code
+        run: |
+          make format
