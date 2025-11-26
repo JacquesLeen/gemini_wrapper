@@ -1,7 +1,5 @@
 name: Gemini wrapper
 description: A simple wrapper for the Gemini search engine.
-version: 1.0.0
-author: Giacomo Lini
 
 on: [push]
 jobs:
