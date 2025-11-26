@@ -1,0 +1,3 @@
+google-genai
+pylint
+black
